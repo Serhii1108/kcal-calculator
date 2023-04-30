@@ -1,0 +1,132 @@
+.transparent {
+  opacity: 0;
+  transition: 0.2s all linear;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 500px;
+  margin: 100px auto 0 auto;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Signika", sans-serif;
+}
+
+.search-wrap {
+  display: flex;
+  column-gap: 10px;
+}
+
+.search-input {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.add-btn {
+  font-size: 15px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.error-message {
+  font-family: "Signika", sans-serif;
+  display: inline;
+  color: red;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.content-wrap {
+  width: 100%;
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-x: hidden;
+}
+
+#list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item::marker {
+  content: "";
+}
+
+.item-img {
+  background-color: #000;
+  margin-right: 20px;
+  width: 50px;
+}
+
+.item-title {
+  font-family: "Signika", sans-serif;
+  font-size: 20px;
+}
+
+.item-title span {
+  font-weight: bold;
+}
+
+.delete {
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.1s all linear;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+}
+
+.delete img {
+  width: 40px;
+}
+
+.total {
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1.1px;
+  margin-top: 30px;
+}
+
+#totalKcal {
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  margin-top: auto;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+
+  transition: all 0.2s linear;
+  border-bottom: solid 3px transparent;
+}
+
+footer a:hover {
+  border-bottom: solid 2px #da0037;
+}
